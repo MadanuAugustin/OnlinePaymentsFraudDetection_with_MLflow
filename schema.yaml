@@ -1,3 +1,20 @@
 
 
-key : val
+
+
+COLUMNS :
+  step             :   int64
+  type             :  object
+  amount           : float64
+  nameOrig         :  object
+  oldbalanceOrg    : float64
+  newbalanceOrig   : float64
+  nameDest         :  object
+  oldbalanceDest   : float64
+  newbalanceDest   : float64
+  isFraud          :   int64
+  isFlaggedFraud   :   int64
+
+
+TARGET_COLUMN :
+  name : isFraud

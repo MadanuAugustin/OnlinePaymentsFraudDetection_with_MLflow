@@ -29,7 +29,7 @@ class DataTransformationPipeline:
                     data_transformation_config = config.get_data_transformation_config()
                     data_transformation = DataTransformation(config = data_transformation_config)
                     data_transformation.data_split()
-                    # data_transformation.initiate_data_transformation()
+                    data_transformation.initiate_data_transformation()
 
                 else:
                     raise Exception('Your data schema is not valid, please cross check...!')

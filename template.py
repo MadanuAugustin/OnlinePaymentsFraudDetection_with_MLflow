@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s] : %(message)s : ')
 
 ### defining the project name
 
-project_name = 'CreditScoreClassification'
+project_name = 'OnlinePaymentFraudDetection'
 
 
 

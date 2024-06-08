@@ -4,8 +4,8 @@
 
 
 
-from src.CreditScoreClassification.config.configuration import ConfigurationManager
-from src.CreditScoreClassification.components.data_ingestion import DataIngestion
+from src.OnlinePaymentFraudDetection.config.configuration import ConfigurationManager
+from src.OnlinePaymentFraudDetection.components.data_ingestion import DataIngestion
 
 
 

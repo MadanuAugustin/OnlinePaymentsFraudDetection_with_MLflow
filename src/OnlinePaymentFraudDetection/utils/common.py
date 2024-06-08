@@ -8,8 +8,8 @@ import os
 import sys
 # from box.exceptions import BoxValueError
 import yaml
-from src.CreditScoreClassification.logger_file.logger_obj import logger
-from src.CreditScoreClassification.Exception.custom_exception import CustomException
+from src.OnlinePaymentFraudDetection.logger_file.logger_obj import logger
+from src.OnlinePaymentFraudDetection.Exception.custom_exception import CustomException
 import json
 import joblib
 from box import ConfigBox

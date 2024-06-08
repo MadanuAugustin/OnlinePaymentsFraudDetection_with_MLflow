@@ -3,9 +3,9 @@
 import sys
 import mysql.connector
 import pandas as pd
-from src.CreditScoreClassification.entity.config_entity import DataIngestionConfig
-from src.CreditScoreClassification.Exception.custom_exception import CustomException
-from src.CreditScoreClassification.logger_file.logger_obj import logger
+from src.OnlinePaymentFraudDetection.entity.config_entity import DataIngestionConfig
+from src.OnlinePaymentFraudDetection.Exception.custom_exception import CustomException
+from src.OnlinePaymentFraudDetection.logger_file.logger_obj import logger
 
 
 

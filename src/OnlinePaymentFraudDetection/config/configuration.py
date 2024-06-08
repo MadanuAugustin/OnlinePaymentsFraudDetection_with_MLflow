@@ -1,10 +1,11 @@
 
 
-from src.CreditScoreClassification.constants import *
-from src.CreditScoreClassification.utils.common import read_yaml, create_directories
-from src.CreditScoreClassification.entity.config_entity import (DataIngestionConfig, DataValidationConfig)
+from src.OnlinePaymentFraudDetection.constants import *
+from src.OnlinePaymentFraudDetection.utils.common import read_yaml, create_directories
+from src.OnlinePaymentFraudDetection.entity.config_entity import (DataIngestionConfig, DataValidationConfig,
+                                                                DataTransformationConfig)
 
-from src.CreditScoreClassification.logger_file.logger_obj import logger
+from src.OnlinePaymentFraudDetection.logger_file.logger_obj import logger
 
 
 
@@ -58,3 +59,19 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir= config.root_dir,
+            local_data_file= config.local_data_file,
+            train_path= config.train_path,
+            test_path= config.test_path
+        )
+    
+
+        return data_transformation_config

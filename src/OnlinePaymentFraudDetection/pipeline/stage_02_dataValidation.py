@@ -6,8 +6,8 @@
 
 
 
-from src.CreditScoreClassification.config.configuration import ConfigurationManager
-from src.CreditScoreClassification.components.data_validation import DataValidation
+from src.OnlinePaymentFraudDetection.config.configuration import ConfigurationManager
+from src.OnlinePaymentFraudDetection.components.data_validation import DataValidation
 
 
 

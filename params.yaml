@@ -1,3 +1,7 @@
 
 
-key : val
+DecisionTreeClassifier:
+  criterion : 'gini'
+  max_depth : None
+  max_features : None
+  max_leaf_nodes : None
